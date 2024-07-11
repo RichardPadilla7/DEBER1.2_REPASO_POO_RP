@@ -18,7 +18,7 @@ public class Estudiantes {
 
                 try (Connection connection = DriverManager.getConnection(url, user, password)) {
                     System.out.println("Conectado a la base de datos");
-                    String query = "SELECT * FROM estudiantes WHERE cedula='" + consultaTxt.getText() + "'";
+                    String query = "SELECT * FROM estudiantes'" + resultadoTxt.getText() + "'";
 
                     Statement statement = connection.createStatement();
                     ResultSet resultSet = statement.executeQuery(query);
