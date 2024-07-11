@@ -48,7 +48,7 @@ public class Estudiantes {
                     }
                     resultadoTxt.setText("<html>" + resultado.toString().replace("\n", "<br>") + "</html>");
                 } catch (SQLException ex) {
-                    System.out.println("Error al ejecutar la consulta: " + ex.getMessage());
+                    System.out.println("Error al ejecutar los datos!." + ex.getMessage());
                 }
             }
         });
